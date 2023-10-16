@@ -1,0 +1,6 @@
+HomePageLocators:
+  titleModal: //span[contains(text(),'XX Semana de MAC')]
+  closeModal: //a[@title='Close']
+  titleHomePage: //h2[contains(text(),'Avisos Recientes')]
+  loginButton: //a[@href='/portada/persona/']
+
