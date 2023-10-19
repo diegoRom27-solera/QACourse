@@ -8,7 +8,7 @@ Resource  ../Resources/PageObjects/HomePage/HomePage.resource
 *** Test Cases ***
 TC_0003_Mac_Login
     [Tags]    Login_Logout
-    [Documentation]    Sign in to the XRS HOST 
+    [Documentation]    Sign in to the Mac Page
     Launch Web Page   https://mac.acatlan.unam.mx/
     Modal Window Should Be Open
     Close Modal Window

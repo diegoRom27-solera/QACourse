@@ -12,7 +12,7 @@ Test Teardown  Logout Mac
 *** Test Cases ***
 TC_0004_Login
     [Tags]    Login_Logout
-    [Documentation]    Sign in to the XRS HOST 
+    [Documentation]    Sign in to the Mac page 
     Login Page Should Be Displayed
     Student Login Should Be Displayed
     Click On Student Login

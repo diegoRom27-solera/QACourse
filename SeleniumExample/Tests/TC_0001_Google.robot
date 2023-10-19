@@ -5,6 +5,6 @@ Resource   ../Resources/Common.resource
 #SeleniumExample\Tests\Test1.robot
 *** Test Cases ***
 TC_0001_Google
-    [Tags]    Login_Logout
-    [Documentation]    Sign in to the XRS HOST 
+    [Tags]   Google
+    [Documentation]    Launch Browser 
     Launch Browser

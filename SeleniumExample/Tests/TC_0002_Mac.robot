@@ -5,6 +5,6 @@ Resource   ../Resources/Common.resource
 #SeleniumExample\Tests\Test1.robot
 *** Test Cases ***
 TC_0002_Mac
-    [Tags]    Login_Logout
-    [Documentation]    Sign in to the XRS HOST 
+    [Tags]    MAC
+    [Documentation]   Launch Web Page
     Launch Web Page   https://mac.acatlan.unam.mx/
