@@ -17,8 +17,8 @@ TC_0004_Login
     Student Login Should Be Displayed
     Click On Student Login
     Student Login Prompt Should Be Displayed
-    Enter Username  username=419077006
-    Enter Password  password=20000127
+    Enter Username  username=
+    Enter Password  password=
     Click On Sign In Button
     Username Should Be Displayed  username=Diego Romero Mora
 
