@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20231019 15:05:53.003" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.8 on win32)" generated="20231019 15:15:59.361" rpa="false" schemaversion="3">
 <suite id="s1" name="TC 0004 Login" source="C:\Users\Diego.Romero\Desktop\GitHub\QACourse\SeleniumExample\Tests\TC_0004_Login.robot">
-<test id="s1-t1" name="TC_0004_Login" line="13">
+<test id="s1-t1" name="TC_0004_Login" line="14">
 <kw name="Login Mac" type="SETUP">
 <kw name="Launch Web Page" library="Common">
 <arg>https://mac.acatlan.unam.mx/</arg>
@@ -9,146 +9,146 @@
 <arg>${url}</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20231019 15:05:53.171" level="INFO">Opening browser 'chrome' to base url 'https://mac.acatlan.unam.mx/'.</msg>
-<status status="PASS" starttime="20231019 15:05:53.171" endtime="20231019 15:06:04.445"/>
+<msg timestamp="20231019 15:15:59.542" level="INFO">Opening browser 'chrome' to base url 'https://mac.acatlan.unam.mx/'.</msg>
+<status status="PASS" starttime="20231019 15:15:59.542" endtime="20231019 15:16:11.484"/>
 </kw>
-<status status="PASS" starttime="20231019 15:05:53.171" endtime="20231019 15:06:04.445"/>
+<status status="PASS" starttime="20231019 15:15:59.542" endtime="20231019 15:16:11.485"/>
 </kw>
 <kw name="Modal Window Should Be Open" library="HomePage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${HomePageLocators.titleModal}</arg>
 <arg>60s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231019 15:06:04.445" endtime="20231019 15:06:04.772"/>
+<status status="PASS" starttime="20231019 15:16:11.485" endtime="20231019 15:16:11.810"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:04.445" endtime="20231019 15:06:04.772"/>
+<status status="PASS" starttime="20231019 15:16:11.485" endtime="20231019 15:16:11.810"/>
 </kw>
 <kw name="Close Modal Window" library="HomePage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${HomePageLocators.closeModal}</arg>
 <arg>60s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231019 15:06:04.772" endtime="20231019 15:06:04.796"/>
+<status status="PASS" starttime="20231019 15:16:11.810" endtime="20231019 15:16:11.829"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${HomePageLocators.closeModal}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231019 15:06:04.797" level="INFO">Clicking element '//a[@title='Close']'.</msg>
-<status status="PASS" starttime="20231019 15:06:04.796" endtime="20231019 15:06:04.844"/>
+<msg timestamp="20231019 15:16:11.830" level="INFO">Clicking element '//a[@title='Close']'.</msg>
+<status status="PASS" starttime="20231019 15:16:11.829" endtime="20231019 15:16:11.874"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:04.772" endtime="20231019 15:06:04.844"/>
+<status status="PASS" starttime="20231019 15:16:11.810" endtime="20231019 15:16:11.874"/>
 </kw>
 <kw name="Home Page Should Be Displayed" library="HomePage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${HomePageLocators.titleHomePage}</arg>
 <arg>60s</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231019 15:06:04.845" endtime="20231019 15:06:04.863"/>
+<status status="PASS" starttime="20231019 15:16:11.874" endtime="20231019 15:16:11.888"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:04.844" endtime="20231019 15:06:04.863"/>
+<status status="PASS" starttime="20231019 15:16:11.874" endtime="20231019 15:16:11.888"/>
 </kw>
 <kw name="Click On Login Button" library="HomePage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${HomePageLocators.loginButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231019 15:06:04.865" level="INFO">Clicking element '//a[@href='/portada/persona/']'.</msg>
-<status status="PASS" starttime="20231019 15:06:04.864" endtime="20231019 15:06:06.927"/>
+<msg timestamp="20231019 15:16:11.889" level="INFO">Clicking element '//a[@href='/portada/persona/']'.</msg>
+<status status="PASS" starttime="20231019 15:16:11.888" endtime="20231019 15:16:12.930"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:04.863" endtime="20231019 15:06:06.927"/>
+<status status="PASS" starttime="20231019 15:16:11.888" endtime="20231019 15:16:12.930"/>
 </kw>
-<status status="PASS" starttime="20231019 15:05:53.171" endtime="20231019 15:06:06.927"/>
+<status status="PASS" starttime="20231019 15:15:59.542" endtime="20231019 15:16:12.931"/>
 </kw>
 <kw name="Login Page Should Be Displayed" library="LoginPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${loginPageLocators.loginLabel}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231019 15:06:06.930" endtime="20231019 15:06:06.953"/>
+<status status="PASS" starttime="20231019 15:16:12.931" endtime="20231019 15:16:12.958"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:06.930" endtime="20231019 15:06:06.954"/>
+<status status="PASS" starttime="20231019 15:16:12.931" endtime="20231019 15:16:12.958"/>
 </kw>
 <kw name="Student Login Should Be Displayed" library="LoginPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${loginPageLocators.studentLogin}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231019 15:06:06.955" endtime="20231019 15:06:06.972"/>
+<status status="PASS" starttime="20231019 15:16:12.958" endtime="20231019 15:16:12.977"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:06.954" endtime="20231019 15:06:06.972"/>
+<status status="PASS" starttime="20231019 15:16:12.958" endtime="20231019 15:16:12.977"/>
 </kw>
 <kw name="Click On Student Login" library="LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${loginPageLocators.studentLogin}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231019 15:06:06.972" level="INFO">Clicking element 'xpath=//img[@id="estudiante"]//following-sibling::p[contains(text(),'Alumno/Egresado')]'.</msg>
-<status status="PASS" starttime="20231019 15:06:06.972" endtime="20231019 15:06:07.451"/>
+<msg timestamp="20231019 15:16:12.979" level="INFO">Clicking element 'xpath=//img[@id="estudiante"]//following-sibling::p[contains(text(),'Alumno/Egresado')]'.</msg>
+<status status="PASS" starttime="20231019 15:16:12.978" endtime="20231019 15:16:13.428"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:06.972" endtime="20231019 15:06:07.452"/>
+<status status="PASS" starttime="20231019 15:16:12.977" endtime="20231019 15:16:13.428"/>
 </kw>
 <kw name="Student Login Prompt Should Be Displayed" library="LoginPage">
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${loginPageLocators.accountLabel}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231019 15:06:07.453" endtime="20231019 15:06:07.485"/>
+<status status="PASS" starttime="20231019 15:16:13.430" endtime="20231019 15:16:13.462"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:07.453" endtime="20231019 15:06:07.485"/>
+<status status="PASS" starttime="20231019 15:16:13.429" endtime="20231019 15:16:13.462"/>
 </kw>
 <kw name="Enter Username" library="LoginPage">
-<arg>username=419077006</arg>
+<arg>username=${credentialsData.username}</arg>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${loginPageLocators.usernameInput}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231019 15:06:07.486" level="INFO">Typing text '419077006' into text field 'id:usernames'.</msg>
-<status status="PASS" starttime="20231019 15:06:07.486" endtime="20231019 15:06:07.560"/>
+<msg timestamp="20231019 15:16:13.465" level="INFO">Typing text '419077006' into text field 'id:usernames'.</msg>
+<status status="PASS" starttime="20231019 15:16:13.464" endtime="20231019 15:16:13.557"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:07.485" endtime="20231019 15:06:07.560"/>
+<status status="PASS" starttime="20231019 15:16:13.464" endtime="20231019 15:16:13.557"/>
 </kw>
 <kw name="Enter Password" library="LoginPage">
-<arg>password=20000127</arg>
+<arg>password=${credentialsData.password}</arg>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${loginPageLocators.passwordInput}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20231019 15:06:07.561" level="INFO">Typing text '20000127' into text field 'id:elpassword'.</msg>
-<status status="PASS" starttime="20231019 15:06:07.561" endtime="20231019 15:06:07.618"/>
+<msg timestamp="20231019 15:16:13.558" level="INFO">Typing text '20000127' into text field 'id:elpassword'.</msg>
+<status status="PASS" starttime="20231019 15:16:13.558" endtime="20231019 15:16:13.617"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:07.560" endtime="20231019 15:06:07.618"/>
+<status status="PASS" starttime="20231019 15:16:13.557" endtime="20231019 15:16:13.617"/>
 </kw>
 <kw name="Click On Sign In Button" library="LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${loginPageLocators.signInButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231019 15:06:07.619" level="INFO">Clicking element 'xpath=//input[@value='Iniciar Sesión']'.</msg>
-<status status="PASS" starttime="20231019 15:06:07.619" endtime="20231019 15:06:08.610"/>
+<msg timestamp="20231019 15:16:13.619" level="INFO">Clicking element 'xpath=//input[@value='Iniciar Sesión']'.</msg>
+<status status="PASS" starttime="20231019 15:16:13.618" endtime="20231019 15:16:14.438"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:07.619" endtime="20231019 15:06:08.610"/>
+<status status="PASS" starttime="20231019 15:16:13.618" endtime="20231019 15:16:14.439"/>
 </kw>
 <kw name="Username Should Be Displayed" library="LoginPage">
 <arg>username=Diego Romero Mora</arg>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>xpath=//div[contains(text(),'${username}')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20231019 15:06:08.611" endtime="20231019 15:06:08.635"/>
+<status status="PASS" starttime="20231019 15:16:14.440" endtime="20231019 15:16:14.468"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:08.611" endtime="20231019 15:06:08.635"/>
+<status status="PASS" starttime="20231019 15:16:14.440" endtime="20231019 15:16:14.468"/>
 </kw>
 <kw name="Logout Mac" type="TEARDOWN">
 <kw name="Click On Logout Button" library="LoginPage">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${loginPageLocators.logoutButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20231019 15:06:08.638" level="INFO">Clicking element '//a[@href='/portada/logout/']'.</msg>
-<status status="PASS" starttime="20231019 15:06:08.637" endtime="20231019 15:06:10.120"/>
+<msg timestamp="20231019 15:16:14.468" level="INFO">Clicking element '//a[@href='/portada/logout/']'.</msg>
+<status status="PASS" starttime="20231019 15:16:14.468" endtime="20231019 15:16:15.184"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:08.637" endtime="20231019 15:06:10.120"/>
+<status status="PASS" starttime="20231019 15:16:14.468" endtime="20231019 15:16:15.185"/>
 </kw>
-<status status="PASS" starttime="20231019 15:06:08.636" endtime="20231019 15:06:10.120"/>
+<status status="PASS" starttime="20231019 15:16:14.468" endtime="20231019 15:16:15.185"/>
 </kw>
-<doc>Sign in to the XRS HOST</doc>
+<doc>Sign in to the Mac page</doc>
 <tag>Login_Logout</tag>
-<status status="PASS" starttime="20231019 15:05:53.171" endtime="20231019 15:06:10.120"/>
+<status status="PASS" starttime="20231019 15:15:59.542" endtime="20231019 15:16:15.185"/>
 </test>
 <doc>Test Suite for XRS HOST</doc>
-<status status="PASS" starttime="20231019 15:05:53.006" endtime="20231019 15:06:10.121"/>
+<status status="PASS" starttime="20231019 15:15:59.365" endtime="20231019 15:16:15.186"/>
 </suite>
 <statistics>
 <total>

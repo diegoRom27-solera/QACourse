@@ -5,6 +5,7 @@ Resource   ../Resources/Common.resource
 #SeleniumExample\Tests\Test1.robot
 Resource  ../Resources/PageObjects/HomePage/HomePage.resource
 Resource  ../Resources/PageObjects/LoginPage/LoginPage.resource
+Variables  ./credentials.yml
 
 Test Setup  Login Mac
 Test Teardown  Logout Mac
@@ -17,8 +18,8 @@ TC_0004_Login
     Student Login Should Be Displayed
     Click On Student Login
     Student Login Prompt Should Be Displayed
-    Enter Username  username=
-    Enter Password  password=
+    Enter Username  username=${credentialsData.username}
+    Enter Password  password=${credentialsData.password}
     Click On Sign In Button
     Username Should Be Displayed  username=Diego Romero Mora
 
