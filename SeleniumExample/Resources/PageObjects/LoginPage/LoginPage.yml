@@ -1,0 +1,8 @@
+loginPageLocators:
+  loginLabel: id:etiqueta
+  studentLogin: xpath=//img[@id="estudiante"]//following-sibling::p[contains(text(),'Alumno/Egresado')]
+  accountLabel: xpath=//label[contains(text(),'Cuenta')]
+  usernameInput:  id:usernames
+  passwordInput: id:elpassword
+  signInButton: xpath=//input[@value='Iniciar Sesión']
+  logoutButton: //a[@href='/portada/logout/']
